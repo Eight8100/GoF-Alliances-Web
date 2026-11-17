@@ -1,4 +1,4 @@
-# GoFA Revival (web version)
+# GoFA Revival (web version) [WIP]
 
 A fan-made revival of **Galaxy on Fire: Alliances**, the iOS strategy game whose servers were shut down. It plays in your browser and runs a game server on your own computer.
 
