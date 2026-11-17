@@ -66,12 +66,26 @@
     return exts;
   }
 
+  // A banner over everything (both tabs) while the local game server cannot be reached, e.g. after its window was closed:
+  // otherwise the Original look keeps showing the last state and every image that was not loaded yet comes up broken.
+  function serverDown(on) {
+    let b = document.getElementById("server-down");
+    if (!on) { if (b) b.remove(); return; }
+    if (b) return;
+    b = document.createElement("div"); b.id = "server-down";
+    b.style.cssText = "position:fixed;left:0;right:0;top:0;z-index:99999;padding:12px 16px;background:#7a1d1d;color:#fff;" +
+      "font:600 15px/1.4 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;text-align:center;box-shadow:0 2px 8px #0008";
+    b.textContent = "The game server is not running. Start Play GoFA again, then reload this page.";
+    document.body.appendChild(b);
+  }
+
   async function post(body) {
     S.busy++; render.busy();
     try {
       let r;
       try { r = await fetch("/action", { method: "POST", headers: { "Content-Type": "application/dominion-bin" }, body }); }
-      catch (e) { throw new Error("cannot reach the relay (" + location.origin + "): is it running? " + e.message); }
+      catch (e) { serverDown(true); throw new Error("cannot reach the relay (" + location.origin + "): is it running? " + e.message); }
+      serverDown(r.status === 502);
       if (!r.ok) throw new Error("HTTP " + r.status + " " + (await r.text()).slice(0, 120));
       return parseReply(await r.arrayBuffer());
     } finally { S.busy--; render.busy(); }
