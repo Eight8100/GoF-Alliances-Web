@@ -1,0 +1,1712 @@
+{
+ "005e82c7": {
+  "h": 80,
+  "name": "flag_NA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0191f29d": {
+  "h": 80,
+  "name": "flag_RO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "02b0c248": {
+  "h": 80,
+  "name": "flag_YE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0378dfd6": {
+  "h": 80,
+  "name": "flag_AR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0395195a": {
+  "h": 500,
+  "label": "commander_vossk_lvl_4_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "04f5ce26": {
+  "h": 80,
+  "name": "flag_KH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "053abe7c": {
+  "h": 80,
+  "name": "flag_WF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "05fe80fc": {
+  "h": 288,
+  "label": "item_card_7",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 7",
+  "w": 380
+ },
+ "073346de": {
+  "h": 80,
+  "name": "flag_NE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0a9e3b56": {
+  "h": 500,
+  "label": "commander_nivellian_lvl_5_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "0ac9fe39": {
+  "h": 80,
+  "name": "flag_EG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0bd0580f": {
+  "h": 500,
+  "name": "commander_terran_lvl_6",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "0cbd9c16": {
+  "h": 500,
+  "name": "commander_terran_lvl_2",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "0d0460de": {
+  "h": 500,
+  "name": "commander_void",
+  "source": "CRC32 match",
+  "w": 500
+ },
+ "0da357e4": {
+  "h": 80,
+  "name": "flag_AZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0da43a20": {
+  "h": 80,
+  "name": "flag_EC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0df3ff4f": {
+  "h": 500,
+  "label": "commander_nivellian_lvl_1_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "0e826731": {
+  "h": 80,
+  "name": "flag_JP",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "0e850af5": {
+  "h": 80,
+  "name": "flag_NI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "10132a44": {
+  "h": 80,
+  "name": "flag_ES",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "10d5eef3": {
+  "h": 288,
+  "label": "item_card_8",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 8",
+  "w": 380
+ },
+ "10f3ffad": {
+  "h": 80,
+  "name": "flag_OM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "113c8ff7": {
+  "h": 80,
+  "name": "flag_SC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "1267b690": {
+  "h": 80,
+  "name": "flag_default",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "12fa070f": {
+  "h": 80,
+  "name": "flag_VN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "12fd6acb": {
+  "h": 80,
+  "name": "flag_RW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "1590aed2": {
+  "h": 80,
+  "name": "flag_RS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "16514bee": {
+  "h": 80,
+  "name": "flag_SG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "17995670": {
+  "h": 80,
+  "name": "flag_KP",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "188ac3dc": {
+  "h": 80,
+  "name": "flag_SO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "19052e20": {
+  "h": 288,
+  "label": "item_card_15",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 15",
+  "w": 380
+ },
+ "19a20bab": {
+  "h": 80,
+  "name": "flag_AF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "1a648353": {
+  "h": 80,
+  "name": "flag_DK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "1a8456ba": {
+  "h": 80,
+  "name": "flag_NU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "1dbb66a7": {
+  "h": 500,
+  "name": "commander_vossk_lvl_4",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "1fe707c5": {
+  "h": 80,
+  "name": "flag_SK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "20cb0849": {
+  "h": 80,
+  "name": "flag_PW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "20cc658d": {
+  "h": 80,
+  "name": "flag_TN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "21047813": {
+  "h": 80,
+  "name": "flag_LY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "22c2f0eb": {
+  "h": 80,
+  "name": "flag_IT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "230d80b1": {
+  "h": 80,
+  "name": "flag_UZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "254fe11b": {
+  "h": 80,
+  "name": "flag_CN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "258dd5df": {
+  "h": 288,
+  "label": "item_card_10",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 10",
+  "w": 380
+ },
+ "268e0427": {
+  "h": 80,
+  "name": "flag_BZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "274619b9": {
+  "h": 80,
+  "name": "flag_ZM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "27a1a194": {
+  "h": 80,
+  "name": "flag_TJ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2852e1d1": {
+  "h": 80,
+  "name": "flag_FK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "28558c15": {
+  "h": 80,
+  "name": "flag_BR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "28b23438": {
+  "h": 80,
+  "name": "flag_LU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2b73d104": {
+  "h": 80,
+  "name": "flag_MA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2b946929": {
+  "h": 80,
+  "name": "flag_CF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2c1e151d": {
+  "h": 80,
+  "name": "flag_ME",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2e17edbf": {
+  "h": 80,
+  "name": "flag_TF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2ef05592": {
+  "h": 80,
+  "name": "flag_ZA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2f38480c": {
+  "h": 80,
+  "name": "flag_BV",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "2f3f25c8": {
+  "h": 80,
+  "name": "flag_FO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3072f598": {
+  "h": 288,
+  "label": "item_card_9",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 9",
+  "w": 380
+ },
+ "30e69e82": {
+  "h": 288,
+  "label": "item_card_18",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 18",
+  "w": 380
+ },
+ "314ebd54": {
+  "h": 80,
+  "name": "flag_CR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "31a90579": {
+  "h": 80,
+  "name": "flag_MU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "31ae68bd": {
+  "h": 80,
+  "name": "flag_IL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3268e045": {
+  "h": 80,
+  "name": "flag_LA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "328f5868": {
+  "h": 80,
+  "name": "flag_BF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "33a0fddb": {
+  "h": 80,
+  "name": "flag_TV",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "33c621d4": {
+  "h": 500,
+  "label": "commander_terran_lvl_3_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "34ca5406": {
+  "h": 80,
+  "name": "flag_PK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "34cd39c2": {
+  "h": 80,
+  "name": "flag_TR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "35e29c71": {
+  "h": 80,
+  "name": "flag_BB",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3623794d": {
+  "h": 80,
+  "name": "flag_CV",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "381f4952": {
+  "h": 80,
+  "name": "flag_MY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "38ff9cbb": {
+  "h": 80,
+  "name": "flag_GG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "39553db3": {
+  "h": 500,
+  "name": "commander_nivellian_lvl_5",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "3ad6d6e5": {
+  "h": 260,
+  "name": "planet_attack_glow",
+  "source": "CRC32 match",
+  "w": 260
+ },
+ "3b391443": {
+  "h": 80,
+  "name": "flag_BJ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3bd9c1aa": {
+  "h": 80,
+  "name": "flag_HT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3c54d05a": {
+  "h": 80,
+  "name": "flag_BN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3cb36877": {
+  "h": 80,
+  "name": "flag_LI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3d7c182d": {
+  "h": 80,
+  "name": "flag_PG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3e38f9aa": {
+  "h": 500,
+  "name": "commander_nivellian_lvl_1",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "3f75e08f": {
+  "h": 80,
+  "name": "flag_ID",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3f787f2f": {
+  "h": 80,
+  "name": "flag_void",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "3f953566": {
+  "h": 80,
+  "name": "flag_CZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "400bec68": {
+  "h": 80,
+  "name": "flag_UG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "4123241f": {
+  "h": 80,
+  "name": "flag_GN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "41c3f1f6": {
+  "h": 80,
+  "name": "flag_MP",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "43acd55b": {
+  "h": 500,
+  "label": "commander_terran_lvl_6_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "44a7cd4d": {
+  "h": 80,
+  "name": "flag_TW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "44c11142": {
+  "h": 500,
+  "label": "commander_terran_lvl_2_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "458868fe": {
+  "h": 80,
+  "name": "flag_BG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "46a9582b": {
+  "h": 80,
+  "name": "flag_IM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "46ae35ef": {
+  "h": 80,
+  "name": "flag_MT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "4872d019": {
+  "h": 80,
+  "name": "flag_IE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "48956834": {
+  "h": 80,
+  "name": "flag_GB",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "49b42df2": {
+  "h": 420,
+  "name": "commander_bg",
+  "source": "CRC32 match",
+  "w": 547
+ },
+ "4a7b28bb": {
+  "h": 80,
+  "name": "flag_PF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "4b53e0cc": {
+  "h": 80,
+  "name": "flag_BO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "4c394911": {
+  "h": 80,
+  "name": "flag_FR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "4cdef13c": {
+  "h": 80,
+  "name": "flag_HU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "4dd60526": {
+  "h": 288,
+  "label": "item_card_13",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 13",
+  "w": 380
+ },
+ "4e520d25": {
+  "h": 500,
+  "name": "commander_nivellian_lvl_4",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "4f1879c4": {
+  "h": 80,
+  "name": "flag_MX",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "50a1fcc6": {
+  "h": 80,
+  "name": "flag_PR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "50a69102": {
+  "h": 80,
+  "name": "flag_TK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5248d18d": {
+  "h": 80,
+  "name": "flag_CO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "52a80464": {
+  "h": 80,
+  "name": "flag_IQ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "52af69a0": {
+  "h": 80,
+  "name": "flag_MH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "55227850": {
+  "h": 80,
+  "name": "flag_GR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "55251594": {
+  "h": 80,
+  "name": "flag_CK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "55c2adb9": {
+  "h": 80,
+  "name": "flag_ML",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5688ca99": {
+  "h": 288,
+  "label": "item_card_2",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 2",
+  "w": 380
+ },
+ "57cb551b": {
+  "h": 80,
+  "name": "flag_TO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "583f789a": {
+  "h": 80,
+  "name": "flag_BW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5910dd29": {
+  "h": 80,
+  "name": "flag_TG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5ad13815": {
+  "h": 80,
+  "name": "flag_US",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5b19258b": {
+  "h": 80,
+  "name": "flag_MD",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5c9359bf": {
+  "h": 80,
+  "name": "flag_CG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5e7d1930": {
+  "h": 80,
+  "name": "flag_TC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5f52bc83": {
+  "h": 80,
+  "name": "flag_BS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5f55d147": {
+  "h": 80,
+  "name": "flag_FJ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5fb2696a": {
+  "h": 80,
+  "name": "flag_HM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "5fb504ae": {
+  "h": 80,
+  "name": "flag_LT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "607eb30f": {
+  "h": 80,
+  "name": "flag_AO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "635f83da": {
+  "h": 80,
+  "name": "flag_JE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "663bbf61": {
+  "h": 80,
+  "name": "flag_SB",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "67141ad2": {
+  "h": 80,
+  "name": "flag_ER",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6800e2ba": {
+  "h": 80,
+  "name": "flag_YT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "68e03753": {
+  "h": 80,
+  "name": "flag_SJ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "68e75a97": {
+  "h": 80,
+  "name": "flag_WS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6abc5631": {
+  "h": 500,
+  "name": "commander_vossk_lvl_5",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "6aeea235": {
+  "h": 80,
+  "name": "flag_NP",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6c4b7bb2": {
+  "h": 80,
+  "name": "flag_VC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6d63b3c5": {
+  "h": 80,
+  "name": "flag_DJ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6d840be8": {
+  "h": 80,
+  "name": "flag_JM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6dd19228": {
+  "h": 500,
+  "name": "commander_vossk_lvl_1",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "6e021eb6": {
+  "h": 288,
+  "label": "item_card_16",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 16",
+  "w": 380
+ },
+ "6e45eed4": {
+  "h": 80,
+  "name": "flag_KY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6ea53b3d": {
+  "h": 80,
+  "name": "flag_AG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "6f8df34a": {
+  "h": 80,
+  "name": "flag_SN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "70d4a3a1": {
+  "h": 80,
+  "name": "flag_DZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "73122b59": {
+  "h": 80,
+  "name": "flag_AW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "73f2feb0": {
+  "h": 80,
+  "name": "flag_KI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "73ffedd5": {
+  "h": 500,
+  "label": "commander_vossk_lvl_1_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "747fef40": {
+  "h": 80,
+  "name": "flag_AS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "749229cc": {
+  "h": 500,
+  "label": "commander_vossk_lvl_5_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "749f3aa9": {
+  "h": 80,
+  "name": "flag_KM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "75572737": {
+  "h": 80,
+  "name": "flag_SZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "7a44b29b": {
+  "h": 80,
+  "name": "flag_KE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "7b8caf05": {
+  "h": 80,
+  "name": "flag_SR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "7bbaac80": {
+  "h": 500,
+  "name": "commander_terran_lvl_3",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "7c40d2d8": {
+  "h": 288,
+  "label": "item_card_5",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 5",
+  "w": 380
+ },
+ "7ce16b1c": {
+  "h": 80,
+  "name": "flag_SV",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "7d990bc0": {
+  "h": 500,
+  "label": "commander_nivellian_lvl_4_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "7eeffe7a": {
+  "h": 80,
+  "name": "flag_NL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "800c7f9a": {
+  "h": 288,
+  "label": "item_card_14",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 14",
+  "w": 380
+ },
+ "80ab5a11": {
+  "h": 80,
+  "name": "flag_AE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "81839266": {
+  "h": 80,
+  "name": "flag_SL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "82451a9e": {
+  "h": 80,
+  "name": "flag_VA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "838a6ac4": {
+  "h": 80,
+  "name": "flag_JO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "83b60e5b": {
+  "h": 80,
+  "name": "flag_nivellian",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "83dff304": {
+  "h": 500,
+  "name": "commander_vossk_lvl_3",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "84e0c319": {
+  "h": 80,
+  "name": "flag_NR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "8528de87": {
+  "h": 80,
+  "name": "flag_VE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "86ee567f": {
+  "h": 80,
+  "name": "flag_SH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "891d163a": {
+  "h": 80,
+  "name": "flag_AI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "89fdc3d3": {
+  "h": 80,
+  "name": "flag_KW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "8a3b4b2b": {
+  "h": 80,
+  "name": "flag_NZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "8c9e92ac": {
+  "h": 80,
+  "name": "flag_VI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "8e70d223": {
+  "h": 80,
+  "name": "flag_AM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "8e77bfe7": {
+  "h": 80,
+  "name": "flag_ET",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "8f581a54": {
+  "h": 80,
+  "name": "flag_SD",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "92d909b5": {
+  "h": 500,
+  "name": "commander_terran_lvl_5",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "92ef0a30": {
+  "h": 80,
+  "name": "flag_ST",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "93571fa1": {
+  "h": 288,
+  "label": "item_card_4",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 4",
+  "w": 380
+ },
+ "93976aec": {
+  "h": 500,
+  "label": "commander_nivellian_lvl_6_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "944ad3b7": {
+  "h": 80,
+  "name": "flag_KG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "94faaef5": {
+  "h": 500,
+  "label": "commander_nivellian_lvl_2_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "95b4cdac": {
+  "h": 500,
+  "name": "commander_terran_lvl_1",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "989fcee3": {
+  "h": 80,
+  "name": "flag_VU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "9d1c4a75": {
+  "h": 80,
+  "name": "flag_AU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "9df18cf9": {
+  "h": 500,
+  "label": "commander_vossk_lvl_3_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "9e3a1764": {
+  "h": 80,
+  "name": "flag_NF",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a05c6c09": {
+  "h": 500,
+  "name": "commander_nivellian_lvl_6",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "a0f31f35": {
+  "h": 288,
+  "label": "item_card_6",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 6",
+  "w": 380
+ },
+ "a11618e8": {
+  "h": 80,
+  "name": "flag_MZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a1f6cd01": {
+  "h": 80,
+  "name": "flag_GD",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a23045f9": {
+  "h": 80,
+  "name": "flag_BI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a55d81e0": {
+  "h": 80,
+  "name": "flag_BM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a69c64dc": {
+  "h": 80,
+  "name": "flag_CY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a731a810": {
+  "h": 500,
+  "name": "commander_nivellian_lvl_2",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "a840812a": {
+  "h": 80,
+  "name": "flag_GH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a8a054c3": {
+  "h": 80,
+  "name": "flag_MV",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "a968495d": {
+  "h": 80,
+  "name": "flag_UA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "aaaec1a5": {
+  "h": 80,
+  "name": "flag_PL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ab3b222d": {
+  "h": 80,
+  "name": "flag_target",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ab61b1ff": {
+  "h": 80,
+  "name": "flag_LB",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ab8609d2": {
+  "h": 80,
+  "name": "flag_BE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "acebcdcb": {
+  "h": 80,
+  "name": "flag_BA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ada2b477": {
+  "h": 500,
+  "label": "commander_terran_lvl_4_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "adc305bc": {
+  "h": 80,
+  "name": "flag_PH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "af2a28f7": {
+  "h": 80,
+  "name": "flag_CU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "af2d4533": {
+  "h": 80,
+  "name": "flag_GL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "afcd90da": {
+  "h": 80,
+  "name": "flag_MR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "b1bb6582": {
+  "h": 80,
+  "name": "flag_LV",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "b41e51e5": {
+  "h": 288,
+  "label": "item_card_3",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 3",
+  "w": 380
+ },
+ "b5f0fc8a": {
+  "h": 80,
+  "name": "flag_CA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "b6d1cc5f": {
+  "h": 80,
+  "name": "flag_HK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "b6d6a19b": {
+  "h": 80,
+  "name": "flag_LR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "b7beb04b": {
+  "h": 80,
+  "name": "flag_vossk",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "b9c259f3": {
+  "h": 80,
+  "name": "flag_PT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ba04d10b": {
+  "h": 80,
+  "name": "flag_UY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "bb2b74b8": {
+  "h": 80,
+  "name": "flag_CI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "bbcccc95": {
+  "h": 80,
+  "name": "flag_MN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "bc41dd65": {
+  "h": 80,
+  "name": "flag_GT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "bc46b0a1": {
+  "h": 80,
+  "name": "flag_CM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "bca66548": {
+  "h": 80,
+  "name": "flag_IS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "bf87559d": {
+  "h": 80,
+  "name": "flag_BY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c0198c93": {
+  "h": 80,
+  "name": "flag_TD",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c13144e4": {
+  "h": 80,
+  "name": "flag_FM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c1362920": {
+  "h": 80,
+  "name": "flag_BT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c1d1910d": {
+  "h": 80,
+  "name": "flag_LS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c2107431": {
+  "h": 80,
+  "name": "flag_MG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c2f0a1d8": {
+  "h": 80,
+  "name": "flag_GY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c57db028": {
+  "h": 80,
+  "name": "flag_MC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c65c80fd": {
+  "h": 80,
+  "name": "flag_FI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c6bb38d0": {
+  "h": 80,
+  "name": "flag_HN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c773254e": {
+  "h": 80,
+  "name": "flag_PY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "c9afc0b8": {
+  "h": 80,
+  "name": "flag_TH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cb418037": {
+  "h": 80,
+  "name": "flag_CL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cb46edf3": {
+  "h": 80,
+  "name": "flag_GU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cba155de": {
+  "h": 80,
+  "name": "flag_IR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cba6381a": {
+  "h": 80,
+  "name": "flag_MK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cc2b29ea": {
+  "h": 80,
+  "name": "flag_GQ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cc2c442e": {
+  "h": 80,
+  "name": "flag_CH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cccbfc03": {
+  "h": 80,
+  "name": "flag_MO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "cd048c59": {
+  "h": 80,
+  "name": "flag_QA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ce87b07a": {
+  "h": 288,
+  "label": "item_card_1",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 1",
+  "w": 380
+ },
+ "cec204a1": {
+  "h": 80,
+  "name": "flag_TL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d0369886": {
+  "h": 500,
+  "name": "commander_nivellian_lvl_3",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "d19b544a": {
+  "h": 80,
+  "name": "flag_CX",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d19c398e": {
+  "h": 80,
+  "name": "flag_GA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d2ba649f": {
+  "h": 80,
+  "name": "flag_HR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d2bd095b": {
+  "h": 80,
+  "name": "flag_LK",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d3727901": {
+  "h": 80,
+  "name": "flag_PE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d41fbd18": {
+  "h": 80,
+  "name": "flag_PA",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d4681c62": {
+  "h": 288,
+  "label": "item_card_11",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 11",
+  "w": 380
+ },
+ "d537756f": {
+  "h": 80,
+  "name": "flag_BH",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d6f1fd97": {
+  "h": 80,
+  "name": "flag_GE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d82a75a5": {
+  "h": 80,
+  "name": "flag_GM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "d8caa04c": {
+  "h": 80,
+  "name": "flag_MS",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "da24e0c3": {
+  "h": 80,
+  "name": "flag_ZW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "daa584e1": {
+  "h": 500,
+  "label": "commander_terran_lvl_5_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "dc668169": {
+  "h": 80,
+  "name": "flag_LC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "dc813944": {
+  "h": 80,
+  "name": "flag_BD",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "dd58d908": {
+  "h": 80,
+  "name": "flag_terran",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ddae9cf7": {
+  "h": 80,
+  "name": "flag_TT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ddc840f8": {
+  "h": 500,
+  "label": "commander_terran_lvl_1_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "df47b1bc": {
+  "h": 80,
+  "name": "flag_GI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "dfa00991": {
+  "h": 80,
+  "name": "flag_IN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "dfa76455": {
+  "h": 80,
+  "name": "flag_MW",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "e29013ec": {
+  "h": 288,
+  "label": "item_card_17",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 17",
+  "w": 380
+ },
+ "e3fd9e63": {
+  "h": 500,
+  "label": "commander_nivellian_lvl_3_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "e4c79f15": {
+  "h": 80,
+  "name": "flag_EE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "e5de3923": {
+  "h": 500,
+  "name": "commander_terran_lvl_4",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "e7e6afc0": {
+  "h": 80,
+  "name": "flag_NO",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "e93d27f2": {
+  "h": 80,
+  "name": "flag_NG",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ea1b7ae3": {
+  "h": 80,
+  "name": "flag_AT",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "eaf6bc6f": {
+  "h": 500,
+  "label": "commander_vossk_lvl_2_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "ec5e768d": {
+  "h": 80,
+  "name": "flag_SY",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ed966b13": {
+  "h": 80,
+  "name": "flag_KN",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ed9b7876": {
+  "h": 500,
+  "label": "commander_vossk_lvl_6_alt",
+  "source": "client FUN_1001bf7b4 (flag clear; same switch as commander_menu_<race>1_<n> in FUN_1001bfaa0); real name unknown",
+  "w": 500
+ },
+ "ee50e3eb": {
+  "h": 80,
+  "name": "flag_NC",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f1e966e9": {
+  "h": 80,
+  "name": "flag_SI",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f3072666": {
+  "h": 80,
+  "name": "flag_DM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f3b5078b": {
+  "h": 500,
+  "name": "commander_vossk_lvl_6",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "f4d8c392": {
+  "h": 500,
+  "name": "commander_vossk_lvl_2",
+  "source": "CRC32 match; client FUN_1001bf7b4 (flag set)",
+  "w": 500
+ },
+ "f58277ca": {
+  "h": 288,
+  "label": "item_card_12",
+  "source": "client table 0x100ae6b60 (FUN_1001c07d8): picture of inventory item type 12",
+  "w": 380
+ },
+ "f684a2f0": {
+  "h": 80,
+  "name": "flag_SM",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f74cbf6e": {
+  "h": 80,
+  "name": "flag_KZ",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f7ac6a87": {
+  "h": 80,
+  "name": "flag_AD",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f85f2ac2": {
+  "h": 80,
+  "name": "flag_SE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f977e2b5": {
+  "h": 80,
+  "name": "flag_AL",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "f997375c": {
+  "h": 80,
+  "name": "flag_KR",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "fcf30be7": {
+  "h": 80,
+  "name": "flag_RU",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "fddcae54": {
+  "h": 80,
+  "name": "flag_DE",
+  "source": "CRC32 match",
+  "w": 80
+ },
+ "ff32eedb": {
+  "h": 80,
+  "name": "flag_SA",
+  "source": "CRC32 match",
+  "w": 80
+ }
+}

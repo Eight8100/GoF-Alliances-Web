@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoFA Revival setup</title>
+<style>
+  :root { --bg: #070b12; --panel: #101a27; --line: #27405c; --text: #dbe7f3; --dim: #8aa0b8; --accent: #4fb3ff; --ok: #5fd38a; --bad: #ff6b6b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 20%, #13243a 0%, var(--bg) 70%); color: var(--text);
+         font: 15px/1.5 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  main { width: 100%; max-width: 560px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 28px; }
+  h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: .04em; text-transform: uppercase; }
+  .sub { color: var(--dim); margin: 0 0 20px; }
+  ol { padding-left: 20px; margin: 0 0 20px; }
+  li { margin: 4px 0; }
+  .drop { display: block; border: 2px dashed var(--line); border-radius: 8px; padding: 26px 16px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s; }
+  .drop:hover, .drop.over { border-color: var(--accent); background: #0c1622; }
+  .drop b { color: var(--accent); }
+  input[type=file] { display: none; }
+  details { margin-top: 14px; color: var(--dim); }
+  summary { cursor: pointer; }
+  .row { display: flex; gap: 8px; margin-top: 8px; }
+  .row input { flex: 1; min-width: 0; background: #0a121c; color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 8px; font: inherit; }
+  button { background: var(--accent); color: #04121f; border: 0; border-radius: 6px; padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  .bar { height: 8px; background: #0a121c; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; margin: 18px 0 8px; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+  #status { min-height: 1.5em; }
+  #status.ok { color: var(--ok); } #status.bad { color: var(--bad); }
+  pre { background: #0a121c; border: 1px solid var(--line); border-radius: 6px; padding: 10px; max-height: 180px; overflow: auto; font-size: 12px; color: var(--dim); white-space: pre-wrap; margin: 8px 0 0; }
+  .note { font-size: 13px; color: var(--dim); margin-top: 18px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>GoFA Revival</h1>
+  <p class="sub">A fan-made, work-in-progress revival of Galaxy on Fire: Alliances.</p>
+  <ol>
+    <li>This project ships none of the original game's files.</li>
+    <li>Pick <b>your own</b> copy of the iOS game, version 1.16.1 (an <code>.ipa</code> file).</li>
+    <li>The map, text, images and 3D models are copied out of it onto this computer, once. Nothing is uploaded to the internet.</li>
+  </ol>
+
+  <div id="pick">
+    <label class="drop" id="drop" for="file">
+      <b>Choose your .ipa</b> or drop it here<br><span class="sub">about 480 MB · stays on this computer</span>
+    </label>
+    <input type="file" id="file" accept=".ipa,application/octet-stream,application/zip">
+    <details>
+      <summary>Or type the path to an .ipa or an unpacked Dominion.app folder</summary>
+      <div class="row"><input id="path" placeholder="/path/to/Alliances 1.16.1.ipa"><button id="go">Import</button></div>
+    </details>
+  </div>
+
+  <div class="bar"><i id="bar"></i></div>
+  <div id="status">Waiting for your .ipa.</div>
+  <pre id="log" class="hidden"></pre>
+  <p class="note">The import takes a few minutes. You only need to do it once per copy of this project.</p>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const status = (t, cls) => { $("status").textContent = t; $("status").className = cls || ""; };
+const bar = (f) => { $("bar").style.width = Math.round(Math.max(0, Math.min(1, f)) * 100) + "%"; };
+let busy = false;
+
+function lock(on) { busy = on; $("pick").style.opacity = on ? .5 : 1; $("pick").style.pointerEvents = on ? "none" : ""; }
+
+function upload(file) {
+  if (busy || !file) return;
+  if (!/\.ipa$/i.test(file.name)) { status("That is not an .ipa file.", "bad"); return; }
+  lock(true); status("Copying " + file.name + " to the local game server ...");
+  const x = new XMLHttpRequest();
+  x.open("POST", "/setup/upload");
+  x.upload.onprogress = (e) => { if (e.lengthComputable) bar(e.loaded / e.total * 0.3); };
+  x.onload = () => { if (x.status === 200) poll(); else { lock(false); status(x.responseText || "Upload failed.", "bad"); } };
+  x.onerror = () => { lock(false); status("Upload failed: is the game server window still open?", "bad"); };
+  x.send(file);
+}
+
+async function byPath() {
+  const p = $("path").value.trim();
+  if (busy || !p) return;
+  lock(true); status("Starting the import ...");
+  const r = await fetch("/setup/path", { method: "POST", body: p });
+  if (r.ok) poll(); else { lock(false); status(await r.text(), "bad"); }
+}
+
+async function poll() {
+  let s;
+  try { s = await (await fetch("/setup/status")).json(); } catch (e) { setTimeout(poll, 1500); return; }
+  const log = s.log || [];
+  $("log").classList.toggle("hidden", !log.length);
+  $("log").textContent = log.join("\n"); $("log").scrollTop = 1e9;
+  const steps = log.map((l) => /^STEP (\d+)\/(\d+): (.*)/.exec(l)).filter(Boolean);
+  const last = steps[steps.length - 1];
+  if (last) { bar(0.3 + 0.7 * (+last[1] - 1) / +last[2]); status("Step " + last[1] + " of " + last[2] + ": " + last[3]); }
+  if (s.state === "done") {
+    bar(1); status("Done. Starting the game ...", "ok");
+    setTimeout(() => { location.href = "/#original"; location.reload(); }, 1200);
+    return;
+  }
+  if (s.state === "failed") {
+    lock(false); bar(0);
+    status("The import failed (see the log). Check it is Galaxy on Fire: Alliances 1.16.1 and try again.", "bad");
+    return;
+  }
+  setTimeout(poll, 1000);
+}
+
+$("file").onchange = (e) => upload(e.target.files[0]);
+$("go").onclick = byPath;
+$("path").onkeydown = (e) => { if (e.key === "Enter") byPath(); };
+const d = $("drop");
+d.ondragover = (e) => { e.preventDefault(); d.classList.add("over"); };
+d.ondragleave = () => d.classList.remove("over");
+d.ondrop = (e) => { e.preventDefault(); d.classList.remove("over"); upload(e.dataTransfer.files[0]); };
+fetch("/setup/status").then((r) => r.json()).then((s) => { if (s.state === "running") { lock(true); poll(); } }).catch(() => {});
+</script>
+</body>
+</html>

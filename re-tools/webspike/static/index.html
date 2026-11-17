@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoFA web spike</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --panel: #ffffff; --ink: #1c2230; --muted: #667085; --line: #d9dde5; --accent: #2457d6; --accent-ink: #ffffff;
+    --good: #1e7b4a; --warn: #a15c07; --bad: #b42318; --metal: #6b7a90; --gas: #2e9c8f; --crystal: #8a4fd3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11151c; --panel: #1a2029; --ink: #e6e9ef; --muted: #98a2b3; --line: #2c3541; --accent: #6c93ff; --accent-ink: #0b1020;
+      --good: #4cc38a; --warn: #f0b24d; --bad: #ff8a80; }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 -apple-system, "Segoe UI", system-ui, sans-serif; }
+  header { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 16px; margin: 0; }
+  .pill { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); }
+  .pill.ok { color: var(--good); border-color: var(--good); } .pill.warn { color: var(--warn); border-color: var(--warn); }
+  .grow { flex: 1; } .muted { color: var(--muted); } .small { font-size: 12px; }
+  main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  #loginpanel { max-width: 420px; margin: 8vh auto 0; }
+  #loginpanel h2 { margin-top: 0; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  input[type=text], select { font: inherit; padding: 7px 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--bg); color: var(--ink); width: 100%; }
+  button { font: inherit; padding: 7px 12px; border-radius: 7px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+  button.primary, button.act { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  button:disabled { opacity: .5; cursor: default; }
+  .err { color: var(--bad); min-height: 1.4em; font-size: 13px; }
+  #game { display: grid; grid-template-columns: 200px 1fr 300px; gap: 16px; align-items: start; }
+  @media (max-width: 900px) { #game { grid-template-columns: 1fr; } }
+  ul.plain, #planets, #log { list-style: none; margin: 0; padding: 0; }
+  #planets li { margin-bottom: 6px; } .pick { width: 100%; text-align: left; font-size: 13px; } .pick.on { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+  h2 { margin: 0 0 4px; font-size: 18px; } h3 { margin: 18px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .res { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 10px; }
+  .r { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; } .r .k { font-size: 12px; color: var(--muted); } .r .v { font-size: 17px; font-variant-numeric: tabular-nums; }
+  .tut { list-style: none; margin: 8px 0 0; padding: 0; } .tut li { border-top: 1px solid var(--line); padding: 7px 0; display: grid; grid-template-columns: 22px 1fr auto; gap: 2px 8px; align-items: start; }
+  .tut .mark { font-weight: 700; text-align: center; color: var(--muted); } .tut li.ready .mark { color: #b45f06; } .tut li.claimed .mark { color: #1a7f37; } .tut li.claimed .tname { color: var(--muted); text-decoration: line-through; }
+  .tut .tname { font-weight: 600; } .tut .next { grid-column: 2 / 4; } .tut li.now { background: #eef3ff; margin: 0 -8px; padding: 7px 8px; border-radius: 6px; border-top-color: transparent; }
+  .bar { height: 5px; background: var(--line); border-radius: 3px; margin: 6px 0 4px; overflow: hidden; } .bar i { display: block; height: 100%; background: var(--accent); width: 0; }
+  .slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
+  .slot { border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; display: flex; flex-direction: column; gap: 5px; min-height: 108px; }
+  .slot.empty { border-style: dashed; } .slot .name { font-weight: 600; }
+  .cost.bad { color: var(--bad); }
+  .pick .sub { font-size: 11px; color: var(--muted); line-height: 1.3; } .pick .sub.bad { color: var(--bad); }
+  .colcard { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; display: grid; gap: 6px; } .colcard.on { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+  .colcard .colhead { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; } .colcard .colhead .name { font-weight: 600; font-size: 15px; }
+  .colcard .res { margin-top: 2px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); } .colcard .actrow { font-size: 13px; display: grid; gap: 2px; }
+  .v.full { color: var(--warn); } .colsum { margin: 0 0 10px; }
+  button.danger { color: var(--bad); border-color: var(--bad); font-size: 12px; padding: 3px 9px; } button.danger:disabled { opacity: .4; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 12px; } .tabs button.on { border-color: var(--accent); box-shadow: inset 0 -2px 0 var(--accent); }
+  .planetrow { grid-template-columns: 1.5fr .8fr 0 2.2fr; } .planetrow .orders { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .ok { color: var(--good); } .warn { color: var(--warn); } .bad { color: var(--bad); }
+  #galaxyCanvas { width: 100%; display: block; border: 1px solid var(--line); border-radius: 8px; margin-top: 8px; cursor: grab; } #systemPanel { margin-top: 12px; }
+  .fleet { margin-bottom: 8px; min-height: 0; gap: 6px; } .fleet .loader { margin-bottom: 0; } .fleet select { width: auto; }
+  .skills { display: grid; gap: 6px; margin-top: 10px; } .skill { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; }
+  .skill .cost { grid-column: 1; } .skill button { grid-column: 2; grid-row: 1 / span 2; font-size: 12px; padding: 4px 8px; }
+  .mailrow { border-bottom: 1px solid var(--line); padding: 6px 0; } .mailhead { display: flex; gap: 8px; align-items: baseline; cursor: pointer; }
+  .mailhead .grow { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+  .tag { font-size: 11px; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+  .mailbody { padding: 6px 0 2px 4px; font-size: 13px; display: grid; gap: 4px; } .mailbody button { justify-self: start; font-size: 12px; padding: 3px 8px; }
+  .mission { margin-bottom: 8px; min-height: 0; }
+  .loader { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; margin-bottom: 6px; }
+  .loader label { display: flex; flex-direction: column; gap: 2px; } .loader input { width: 88px; }
+  .ships { display: grid; gap: 6px; }
+  .ship { display: grid; grid-template-columns: 1fr 1.7fr 72px 84px; gap: 8px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+  @media (max-width: 700px) { .ship { grid-template-columns: 1fr 72px 84px; } .ship .cost { grid-column: 1 / -1; order: 5; } }
+  #items { display: grid; gap: 6px; } .item { display: grid; grid-template-columns: 1fr 64px auto; gap: 3px 8px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+  .item .cost { grid-column: 1 / -1; } .item button { font-size: 12px; padding: 4px 10px; }
+  input[type=number] { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--bg); color: var(--ink); width: 100%; }
+  button:disabled.act { background: var(--line); color: var(--muted); border-color: var(--line); }
+  .timer { font-variant-numeric: tabular-nums; color: var(--warn); font-weight: 600; }
+  #log li { font: 12px/1.4 ui-monospace, Menlo, monospace; padding: 2px 0; border-bottom: 1px solid var(--line); } #log li.bad { color: var(--bad); }
+  #tools button { margin: 0 6px 6px 0; font-size: 13px; }
+  footer { max-width: 1200px; margin: 0 auto; padding: 0 16px 24px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>GoFA web spike</h1>
+  <span id="mode" class="pill">connecting…</span>
+  <span class="grow"></span>
+  <span id="who"></span><span id="lvl" class="muted"></span><span id="cred"></span><span id="sp" class="muted"></span>
+  <span id="busy" class="muted" hidden>working…</span>
+</header>
+<main>
+  <section id="loginpanel" class="card">
+    <h2>Log in</h2>
+    <p class="muted" id="loginhint">Plays one commander on the game server through the relay. A new name starts a fresh game on the sandbox server.</p>
+    <form id="loginform">
+      <label for="alias">Commander name</label>
+      <input type="text" id="alias" maxlength="24" autocomplete="off">
+      <p class="err" id="loginerr"></p>
+      <button class="primary" id="loginbtn" type="submit">Log in</button>
+    </form>
+  </section>
+  <div id="game" hidden>
+    <aside class="card"><h3 style="margin-top:0">Planets</h3><ul id="planets"></ul></aside>
+    <section class="card" id="main">
+      <div class="muted small" id="artBox" style="margin-bottom:6px">Game art for the Original look: <span id="artState">checking ...</span> · <label style="cursor:pointer;text-decoration:underline">import from your own IPA<input type="file" id="artFile" accept=".ipa,.zip" hidden></label> · <a href="#" id="artForget" onclick="return false">forget the imported art</a> (the file stays on this computer; nothing is uploaded)</div>
+      <div class="tabs"><button id="tabPlanet" class="on">Planet</button><button id="tabColonies">Colonies</button><button id="tabGalaxy">Galaxy map</button><button id="tabHelp" title="The game's own help texts: structures, ships, research, skills, items, missions, the tutorial missions">Help</button><button id="tabPort" title="The planet screen rebuilt in the original look (Esc closes, R overlays the reference screenshot)">Original look</button></div>
+      <div id="planet"></div>
+      <div id="colonies" hidden></div>
+      <div id="galaxy" hidden></div>
+      <div id="help" hidden></div>
+    </section>
+    <aside>
+      <div class="card" id="tools" hidden><h3 style="margin-top:0">Test tools (sandbox only)</h3>
+        <button data-debug="/debug/credits?n=100000">+ credits</button>
+        <button data-debug="/debug/res?planet={planet}&amount=50000">fill stores</button>
+        <button data-debug="/debug/xp?add=5000">+ 5,000 XP</button>
+        <button data-debug="/debug/res?planet={planet}&amount=20&type=5">+ 20 spy drones</button>
+        <button data-debug="/debug/ships?type=1&n=20">+ 20 fighters (home)</button>
+        <button data-debug="/debug/carrier?type=1&at={home}&ships=">+ empty carrier (home)</button>
+      </div>
+      <div class="card" style="margin-top:16px" id="tutcard"><h3 style="margin-top:0">Tutorial missions <span id="tutn" class="muted small"></span></h3><div id="tutorial" class="muted small">asking the server …</div></div>
+      <div class="card" style="margin-top:16px"><h3 style="margin-top:0">Commander</h3><div id="commander"></div></div>
+      <div class="card" style="margin-top:16px"><h3 style="margin-top:0">Items</h3><div id="items"></div></div>
+      <div class="card" style="margin-top:16px"><h3 style="margin-top:0">Mail <span id="mailn" class="muted small"></span></h3><ul id="mail" class="plain"></ul></div>
+      <div class="card" style="margin-top:16px"><h3 style="margin-top:0">Log <span id="age" class="muted small"></span></h3><ul id="log"></ul></div>
+    </aside>
+  </div>
+</main>
+<div id="port" hidden style="position:fixed;inset:0;background:#000;z-index:100;overflow:hidden"></div>
+<footer>Phase 0 spike: a throwaway client for the legacy protocol. Placeholder text and layout only; no Fishlabs art or text.</footer>
+<script src="wire.js"></script>
+<script src="help.js"></script>
+<script src="app.js"></script>
+<script src="galaxy.js"></script>
+<script src="art.js"></script>
+<script src="gofa3d.js"></script>
+<script src="port.js"></script>
+<script src="devjump.js"></script>
+</body>
+</html>

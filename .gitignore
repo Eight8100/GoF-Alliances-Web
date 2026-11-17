@@ -1,0 +1,15 @@
+# Game files imported from your own .ipa: Fishlabs / Deep Silver material, for your own use only. Never commit them.
+data/
+art/
+*.ipa
+
+# Your saves and logs
+re-tools/webspike/play-data/
+*.log
+server.out
+
+# Python / macOS
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

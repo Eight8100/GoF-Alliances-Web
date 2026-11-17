@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>UI kit preview</title>
+<style>body{margin:0;background:#0b1220;color:#9fb3c8;font:12px system-ui;padding:12px}.g{display:flex;flex-wrap:wrap;gap:10px}.c{background:#16233a;border:1px solid #2a3b57;padding:6px;text-align:center;max-width:200px}.c img{display:block;margin:0 auto 4px;max-width:180px;max-height:140px}</style>
+<div id="o"></div>
+<script>
+const q = new URLSearchParams(location.search).get("q") || "button_menu";
+fetch("/art/ui/index.json").then(r => r.json()).then(idx => {
+  const out = document.getElementById("o"); out.innerHTML = "<h3>" + q + "</h3>";
+  const g = document.createElement("div"); g.className = "g";
+  for (const i of idx.filter(i => q.split(",").some(k => i.name.toLowerCase().includes(k)))) {
+    const c = document.createElement("div"); c.className = "c";
+    c.innerHTML = '<img src="/art/ui/' + i.name + '.png"><div>' + i.name + "<br>" + i.width + "x" + i.height + "</div>"; g.append(c);
+  }
+  out.append(g);
+});
+</script>

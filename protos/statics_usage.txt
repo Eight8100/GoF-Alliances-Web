@@ -1,0 +1,56 @@
+== section 2: offset 0x10 getter 0x1000238ac helpers ['0x100273370', '0x100273bb4'] user-sites 167
+    12 <COUNT>
+    11 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+     8 NOTE_INACTIVITY_7_DAYS
+     8 NOTE_INACTIVITY_3_DAYS
+     8 NOTE_INACTIVITY_14_DAYS
+     6 NOTE_INACTIVITY_1_DAY
+     6 NOTE_ACTIVITY_REMINDER_TITLE
+     6 global
+     4 -[AppController applicationWillResignActive:]
+     3 Saved PlanetID: %llu - Saved SystemID: %llu - Saved UI State: %u
+     3 CAPTION_UPPER_ALLIANCE_CHAT
+     3 CAPTION_LOWER_CREDITS
+     3 distanceByLocation - toLocation does not exist: %llu
+     3 distanceByLocation - fromLocation does not exist: %llu
+     3 CAPTION_REPORT
+     3 CAPTION_DELETE_BUTTON
+     3 CAPTION_LEAVE_ALLIANCE
+     3 %d / %d
+== section 3: offset 0x18 getter 0x100023934 helpers ['0x100271e98', '0x100273bb4'] user-sites 6
+== section 4: offset 0x20 getter 0x1000239bc helpers ['0x1002730f8'] user-sites 6
+     1 CAPTION_UPPER_ACHIEVEMENTS
+     1 CAPTION_UPPER_INVENTORY
+== section 5: offset 0x28 getter 0x100023a44 helpers ['0x1002732ec'] user-sites 5
+== section 6: offset 0x30 getter 0x100023acc helpers [] user-sites 4
+== section 7: offset 0x38 getter 0x100023b54 helpers ['0x10027269c'] user-sites 6
+== section 8: offset 0x40 getter 0x100023bdc helpers [] user-sites 4
+== section 9: offset 0x48 getter 0x100023c64 helpers ['0x1002727a8', '0x100273bb4'] user-sites 8
+     1 CAPTION_UPPER_HANGAR_SPACE
+     1 CAPTION_UPPER_SHIPS
+== section 10: offset 0x50 getter 0x100023cec helpers [] user-sites 4
+== section 11: offset 0x58 getter 0x100023d74 helpers ['0x100272b00', '0x100273bb4'] user-sites 7
+== section 12: offset 0x60 getter 0x100023dfc helpers ['0x100272f88', '0x100273bb4'] user-sites 8
+== section 13: offset 0x68 getter 0x100023e84 helpers [] user-sites 4
+== section 14: offset 0x70 getter 0x100023f0c helpers ['0x100271b3c', '0x100273450'] user-sites 15
+     4 ERROR_PLANET_NOT_FOUND
+== section 15: offset 0x78 getter 0x100023f94 helpers [] user-sites 5
+== section 16: offset 0x80 getter 0x10002401c helpers [] user-sites 5
+== section 17: offset 0x88 getter 0x1000240a4 helpers ['0x100272910'] user-sites 5
+== section 18: offset 0x90 getter 0x10002412c helpers ['0x100273548'] user-sites 5
+== section 20: offset 0x98 getter 0x1000241b4 helpers ['0x100273688'] user-sites 5
+== section 21: offset 0xa0 getter 0x10002423c helpers ['0x100273728'] user-sites 5
+== section 22: offset 0xa8 getter 0x1000242c4 helpers ['0x100273818'] user-sites 5
+== section 23: offset 0xb0 getter 0x10002434c helpers [] user-sites 4
+== section 24: offset 0xb8 getter 0x1000243d4 helpers ['0x1002738b0', '0x100273a40'] user-sites 14
+== section 25: offset 0xc0 getter 0x10002445c helpers ['0x1002733e0'] user-sites 5
+== section 26: offset 0xc8 getter 0x1000244e4 helpers [] user-sites 43
+== section 27: offset 0xd0 getter 0x10002456c helpers ['0x100273ab0'] user-sites 9
+     2 INFO_IAP_DEBUG_NO_PERMISSION
+     2 INFO_IAP_ACCOUNT_HAS_PENDING_TRANSACTION
+== section 28: offset 0xd8 getter 0x1000245f4 helpers [] user-sites 6
+== section 29: offset 0xe0 getter 0x10002467c helpers [] user-sites 4
+== section 30: offset 0xe8 getter 0x100024704 helpers [] user-sites 4
+== section 31: offset 0xf0 getter 0x10002478c helpers [] user-sites 4
+== section 32: offset 0xf8 getter 0x100024814 helpers [] user-sites 4
+== section 33: offset 0x100 getter 0x10002489c helpers ['0x100271b3c'] user-sites 5

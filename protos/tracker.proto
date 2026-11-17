@@ -1,0 +1,54 @@
+// recovered from GoF Alliances 1.0.2 (Dominion)
+syntax = "proto2";
+package tracker;
+
+message Transmission {
+  optional string app_id = 1;
+  repeated Session sessions = 2;
+  optional string installation_id = 3;
+}
+
+message Session {
+  optional uint32 session_serial = 1;
+  optional uint64 start_time_utc = 2;
+  optional uint64 end_time_utc = 3;
+  optional sint32 timezone_minutes_from_utc = 4;
+  repeated Event events = 5;
+  optional string mac_address = 6;
+  optional string apple_idfa = 7;
+  optional string apple_idfv = 8;
+  optional string random_id = 9;
+  optional string facebook_id = 10;
+  optional string device_type = 11;
+  optional string device_firmware = 12;
+  optional string app_version = 13;
+  optional string app_language = 14;
+  optional bool apple_idfa_enabled = 15;
+  optional bool cryptid_altered = 16;
+  optional string carrier_name = 17;
+  optional string mobile_country_code = 18;
+  optional string mobile_network_code = 19;
+  optional bool headset_pluggedin = 20;
+  optional bool wifi_on = 21;
+  optional bytes deviceTokenPushNotification = 22;
+  optional bool flushed = 23;
+}
+
+message Event {
+  optional string name = 1;
+  repeated EventParameter parameters = 2;
+  optional uint64 start_time_utc = 3;
+  optional uint64 end_time_utc = 4;
+  optional bool timed_event_complete = 5;
+  optional uint64 timed_event_duration = 6;
+  optional uint64 event_serial = 7;
+  optional bool timed_event_cloned = 8;
+}
+
+message EventParameter {
+  optional string key = 1;
+  optional sint64 numberValue = 2;
+  optional double floatValue = 3;
+  optional string stringValue = 4;
+}
+
